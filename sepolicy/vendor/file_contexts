@@ -37,6 +37,9 @@
 # Display
 /sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)?        u:object_r:vendor_sysfs_graphics:s0
 
+# Livedisplay
+/vendor/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.xiaomi_sm7325                                      u:object_r:hal_lineage_livedisplay_qti_exec:s0
+
 # Displayfeature
 /vendor/bin/displayfeature                                                u:object_r:vendor_displayfeature_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service      u:object_r:vendor_hal_displayfeature_xiaomi_default_exec:s0

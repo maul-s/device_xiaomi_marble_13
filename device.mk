@@ -342,6 +342,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm \
+    vendor.lineage.livedisplay@2.0-service.xiaomi_sm7325
+
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor \
