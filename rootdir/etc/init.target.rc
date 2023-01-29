@@ -251,6 +251,8 @@ on boot
     chown system system /sys/class/qcom-battery/input_suspend
     chmod 774 /sys/class/qcom-battery/input_suspend
 
+    # default country code
+    setprop ro.boot.wificountrycode 00
 
     # game plaid mode
     chown system system  /sys/devices/virtual/gpu_plaid/plaid/game_data
