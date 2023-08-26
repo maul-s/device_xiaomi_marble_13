@@ -85,6 +85,11 @@ SOONG_CONFIG_dolby_vision_enabled := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Dolby Vision
+SOONG_CONFIG_NAMESPACES += dolby_vision
+SOONG_CONFIG_dolby_vision += enabled
+SOONG_CONFIG_dolby_vision_enabled := true
+
 # DTB
 BOARD_USES_DT := true
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtbs
