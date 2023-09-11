@@ -8,9 +8,6 @@ It was announced & released in March 2023.
 Media
 - https://review.lineageos.org/c/LineageOS/android_frameworks_av/+/342862
 
-FEAS
-- https://gist.github.com/YuKongA/81924b5685338645ee8e672fe4c2e5a0
-
 HWC
 - https://github.com/pa-gr/android_frameworks_native/commit/61060ad
 
