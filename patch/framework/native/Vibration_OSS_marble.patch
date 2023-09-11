@@ -1,0 +1,64 @@
+diff --git a/services/vibratorservice/Android.bp b/services/vibratorservice/Android.bp
+index 921c0cece7..2002bdf628 100644
+--- a/services/vibratorservice/Android.bp
++++ b/services/vibratorservice/Android.bp
+@@ -45,7 +45,6 @@ cc_library_shared {
+         "libhidlbase",
+         "liblog",
+         "libutils",
+-        "libcutils",
+         "android.hardware.vibrator-V2-cpp",
+         "android.hardware.vibrator@1.0",
+         "android.hardware.vibrator@1.1",
+diff --git a/services/vibratorservice/VibratorHalController.cpp b/services/vibratorservice/VibratorHalController.cpp
+index 540e0d8747..c1795f5c32 100644
+--- a/services/vibratorservice/VibratorHalController.cpp
++++ b/services/vibratorservice/VibratorHalController.cpp
+@@ -53,16 +53,7 @@ std::shared_ptr<HalWrapper> connectHal(std::shared_ptr<CallbackScheduler> schedu
+         return nullptr;
+     }
+ 
+-    char propStr[PROP_VALUE_MAX] = {0};
+-    sp<Aidl::IVibrator> aidlHal = nullptr;
+-    property_get("sys.haptic.motor", propStr, "");
+-    if (!strcmp(propStr, "linear") || !strcmp(propStr, "zlinear")){
+-        aidlHal = waitForVintfService<Aidl::IVibrator>(String16("vibratorfeature"));
+-        ALOGE("Connected to Vibrator HAL AIDL service : vibratorfeature");
+-    } else{
+-        aidlHal = waitForVintfService<Aidl::IVibrator>();
+-        ALOGE("Connected to Vibrator HAL AIDL service : IVibrator");
+-    }
++    sp<Aidl::IVibrator> aidlHal = waitForVintfService<Aidl::IVibrator>();
+     if (aidlHal) {
+         ALOGV("Successfully connected to Vibrator HAL AIDL service.");
+         return std::make_shared<AidlHalWrapper>(std::move(scheduler), aidlHal);
+diff --git a/services/vibratorservice/include/vibratorservice/VibratorHalWrapper.h b/services/vibratorservice/include/vibratorservice/VibratorHalWrapper.h
+index 6e249d92c7..d2cc9ad7df 100644
+--- a/services/vibratorservice/include/vibratorservice/VibratorHalWrapper.h
++++ b/services/vibratorservice/include/vibratorservice/VibratorHalWrapper.h
+@@ -22,7 +22,6 @@
+ #include <android/hardware/vibrator/BnVibratorCallback.h>
+ #include <android/hardware/vibrator/IVibrator.h>
+ #include <binder/IServiceManager.h>
+-#include <cutils/properties.h>
+ 
+ #include <vibratorservice/VibratorCallbackScheduler.h>
+ 
+@@ -332,15 +331,8 @@ public:
+             std::shared_ptr<CallbackScheduler> scheduler, sp<hardware::vibrator::IVibrator> handle,
+             std::function<HalResult<sp<hardware::vibrator::IVibrator>>()> reconnectFn =
+                     []() {
+-                        char propStr[PROP_VALUE_MAX] = {0};
+-                        property_get("sys.haptic.motor", propStr, "");
+-                        if (!strcmp(propStr, "linear") || !strcmp(propStr, "zlinear")){
+-                            return HalResult<sp<hardware::vibrator::IVibrator>>::ok(
+-                                    checkVintfService<hardware::vibrator::IVibrator>(String16("vibratorfeature")));
+-                        } else{
+-                            return HalResult<sp<hardware::vibrator::IVibrator>>::ok(
+-                                    checkVintfService<hardware::vibrator::IVibrator>());
+-                        }
++                        return HalResult<sp<hardware::vibrator::IVibrator>>::ok(
++                                checkVintfService<hardware::vibrator::IVibrator>());
+                     })
+           : HalWrapper(std::move(scheduler)),
+             mReconnectFn(reconnectFn),
