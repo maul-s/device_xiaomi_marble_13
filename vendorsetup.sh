@@ -8,7 +8,7 @@ rm -rf vendor/xiaomi/marble && git clone https://github.com/SMGLaboratory/vendor
 
 # Kernel
 echo 'Cloning kernel tree'
-rm -rf device/xiaomi/marble-kernel && git clone https://github.com/SMGLaboratory/device_xiaomi_marble-kernel.git device/xiaomi/marble-kernel
+rm -rf device/xiaomi/marble-kernel && git clone https://github.com/SMGLaboratory/device_xiaomi_marble-kernel.git -b main device/xiaomi/marble-kernel
 
 
 # Gapps
