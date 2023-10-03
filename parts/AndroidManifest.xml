@@ -201,14 +201,9 @@
         </service>
 
         <service
-            android:name=".display.ColorService"
-            android:permission="ColorService">
+            android:name=".doze.AodBrightnessService"
+            android:permission="AodBrightnessService">
         </service>
-
-        <service
-            android:name=".camera.NfcCameraService"
-            android:permission="NfcCameraService">
-        </service>
-
+        
     </application>
 </manifest>
