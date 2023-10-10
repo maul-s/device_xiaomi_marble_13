@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_marble.mk
+    $(LOCAL_DIR)/aosp_marble.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_marble-eng \
-    evolution_marble-userdebug \
-    evolution_marble-user
+    aosp_marble-eng \
+    aosp_marble-userdebug \
+    aosp_marble-user
