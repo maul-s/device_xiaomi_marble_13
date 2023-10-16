@@ -124,6 +124,8 @@ BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
 # Kill kernel build task while preserving kernel
 TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_KERNEL_CONFIG := marble_defconfig
 
 # Workaround to make soong generator work
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
