@@ -28,9 +28,5 @@ rm -rf hardware/xiaomi && git clone https://github.com/maul-s/hardware_xiaomi.gi
 echo 'Cloning BCR Tree'
 git clone https://github.com/maul-s/vendor_bcr.git vendor/bcr
 
-# Viper
-echo 'Cloning Viper4Audio'
-git clone https://github.com/maul-s/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
-
 echo 'delete vendorsetup.sh from device tree once this is done'
 mv device/xiaomi/marble/vendorsetup.sh device/xiaomi/marble/vendorsetup.bak
