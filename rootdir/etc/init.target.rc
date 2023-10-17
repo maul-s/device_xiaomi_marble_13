@@ -283,6 +283,7 @@ on boot
     chown root system /sys/devices/platform/soc/1d84000.ufshc/ufsfbs/fbs_send_lr_list
     chown root system /sys/devices/platform/soc/1d84000.ufshc/ufsfbs/fbs_support
     chown root system /sys/devices/platform/soc/1d84000.ufshc/ufsfbs/fbs_wholefile_enable
+    chmod 440 /proc/net/unix
 
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
