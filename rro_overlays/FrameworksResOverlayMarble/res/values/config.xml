@@ -683,6 +683,11 @@
      <!-- The number of volume steps for the ring stream -->
      <integer name="config_audio_ring_vol_steps">15</integer>
 
-     <!-- The default volume for the ring stream -->
-     <integer name="config_audio_ring_vol_default">11</integer>
+    <!-- The default volume for the ring stream -->
+    <integer name="config_audio_ring_vol_default">11</integer>
+
+    <!-- Enables or disables fading edges when marquee is enabled in TextView.
+         Off by default, since the framebuffer readback used to implement the
+         fading edges is prohibitively expensive on most GPUs. -->
+    <bool name="config_ui_enableFadingMarquee">true</bool>
 </resources>
