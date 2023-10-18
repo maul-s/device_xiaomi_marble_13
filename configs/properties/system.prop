@@ -15,10 +15,6 @@ ro.ril.disable.power.collapse=0
 power.saving.mode=1
 pm.sleep_mode=1
 
-# Camera
-persist.vendor.camera.privapp.list=org.lineageos.aperture.org.codeaurora.snapcam,com.android.camera,com.google.camera
-vendor.camera.aux.packagelist=org.lineageos.aperture,org.codeaurora.snapcam,com.android.camera,com.google.camera
-
 # Charger
 ro.charger.enable_suspend=1
 
