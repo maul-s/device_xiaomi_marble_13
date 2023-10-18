@@ -420,7 +420,9 @@ PRODUCT_PACKAGES += \
     TetheringResCommon \
     UpdatesResOverlayMarble \
     WifiResMarble \
-    WifiResTarget
+    WifiResTarget \
+    SettingsLibCommon \
+    BoostFrameworkOverlay
 
 PRODUCT_PACKAGES += \
     AospWifiResOverlayMarbleChina \
