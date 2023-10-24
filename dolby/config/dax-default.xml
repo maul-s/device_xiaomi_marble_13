@@ -1163,7 +1163,7 @@
         <volume-leveler-in-target value="-256"/>
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
-        <virtualizer-enable value="false"/>
+        <virtualizer-enable value="true"/>
         <bass-enhancer-enable value="true"/>
         <virtual-bass-process-enable value="false"/>
         <hearing-protection-enable value="false"/>
