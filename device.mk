@@ -489,6 +489,7 @@ PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.qcom \
     init.class_main.sh \
+    init.kernel.post_boot-taro.sh \
     init.marble.rc \
     init.marble.perf.rc \
     init.qcom.class_core.sh \
