@@ -25,7 +25,6 @@
     -->
     <string name="config_rounded_mask" translatable="false">M8,0C3.6,0,0,3.6,0,8</string>
 
-    <!-- The battery current divider, some kernel report current value in mA other in µA.
-         Leave 1 if you have mA, put 1000 if you have µA-->
-     <integer name="config_battCurrentDivider" translatable="false">1000</integer>
+    <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/battery/fastchg_status</string>
 </resources>
