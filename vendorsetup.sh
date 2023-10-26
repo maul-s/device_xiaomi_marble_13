@@ -24,6 +24,10 @@ git clone https://gitlab.com/vherawidatama/proprietary_vendor_xiaomi_camera.git 
 echo 'Cloning Hardware Xiaomi'
 rm -rf hardware/xiaomi && git clone https://github.com/SMGLaboratory/hardware_xiaomi.git hardware/xiaomi
 
+# BCR tree
+echo 'Cloning BCR Tree'
+git clone https://github.com/maul-s/vendor_bcr.git vendor/bcr
+
 
 echo 'delete vendorsetup.sh from device tree once this is done'
 mv device/xiaomi/marble/vendorsetup.sh device/xiaomi/marble/vendorsetup.bak
