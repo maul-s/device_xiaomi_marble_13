@@ -8,9 +8,6 @@
 # Battery
 /(vendor|system/vendor)/bin/batterysecret u:object_r:batterysecret_exec:s0
 
-# Fastcharge HAL
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.fastcharge@[0-9]\.[0-9]-service\.xiaomi          u:object_r:hal_lineage_fastcharge_default_exec:s0
-
 # Camera
 /data/user/0/com.android.camera(/.*)? u:object_r:app_data_file:s0
 /(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service u:object_r:hal_quickcamera_default_exec:s0

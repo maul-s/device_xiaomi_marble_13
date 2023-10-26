@@ -140,6 +140,3 @@ vendor.sla.wwan.interface u:object_r:vendor_slad_prop:s0
 # Thermal
 vendor.sys.thermal.data.path u:object_r:vendor_thermal_normal_prop:s0
 
-# Fastcharge HAL
-persist.vendor.sec.fastchg_enabled              u:object_r:vendor_fastcharge_prop:s0
-
