@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_marble.mk
+    $(LOCAL_DIR)/awaken_marble.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_marble-eng \
-    spark_marble-userdebug \
-    spark_marble-user
+    awaken_marble-eng \
+    awaken_marble-userdebug \
+    awaken_marble-user
