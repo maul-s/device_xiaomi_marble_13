@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_marble.mk
+    $(LOCAL_DIR)/droidx_marble.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_marble-eng \
-    awaken_marble-userdebug \
-    awaken_marble-user
+    droidx_marble-eng \
+    droidx_marble-userdebug \
+    droidx_marble-user
