@@ -225,6 +225,7 @@ vendor.display.use_layer_ext=0
 vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
 vendor.gralloc.enable_fb_ubwc=1
+debug.sdm.support_writeback=0
 
 # Displayfeature
 ro.vendor.displayfeature.dump=true
