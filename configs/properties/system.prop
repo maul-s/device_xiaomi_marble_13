@@ -78,6 +78,10 @@ persist.dbg.wfc_avail_ovr=1
 persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
 
+# Radio Video Calling
+persist.vendor.radio.vdp_on_ims_cap=1
+persist.vendor.qti.telephony.vt_cam_interface=2
+
 # MGLRU Config
 persist.device_config.mglru_native.lru_gen_config=all
 
