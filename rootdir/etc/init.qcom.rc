@@ -741,12 +741,7 @@ service vendor.msm_irqbl_sdm630 /vendor/bin/msm_irqbalance -f /system/vendor/etc
     user root
     group root
     disabled
-
-service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
-    class late_start
-    user system
-    group system
-
+    
 service esepmdaemon /system/vendor/bin/esepmdaemon
     class core
     user system
