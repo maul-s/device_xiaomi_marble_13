@@ -20,9 +20,6 @@
     -->
     <integer name="config_vibration_supported_intensity_levels">3</integer>
 
-    <!-- add spark maintainer string -->
-    <string name="spark_maintainer">SMGLaboratory</string>
-
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">false</bool>
 
