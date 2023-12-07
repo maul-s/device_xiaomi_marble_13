@@ -60,6 +60,17 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Improve global touch screen response
+debug.performance.tuning=1
+video.accelerate.hw=1
+view.touch_slop=1
+view.scroll_friction=0
+
+# Improve sliding response
+windowsmgr.max_events_per_sec=800
+view.scroll_friction=0
+ro.min_pointer_dur=0
+
 # Radio VoNR Calling
 persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
