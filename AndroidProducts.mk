@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/droidx_marble.mk
+    $(LOCAL_DIR)/afterlife_marble.mk
 
 COMMON_LUNCH_CHOICES := \
-    droidx_marble-eng \
-    droidx_marble-userdebug \
-    droidx_marble-user
+    afterlife_marble-eng \
+    afterlife_marble-userdebug \
+    afterlife_marble-user

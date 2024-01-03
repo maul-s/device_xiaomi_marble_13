@@ -3,7 +3,7 @@ echo 'Starting to clone stuffs needed to build for marble'
 
 # Vendor
 echo 'Cloning vendor tree'
-rm -rf vendor/xiaomi/marble && git clone https://github.com/SMGLaboratory/vendor_xiaomi_marble.git vendor/xiaomi/marble
+rm -rf vendor/xiaomi/marble && git clone https://github.com/maul-s/vendor_xiaomi_marble.git -b droidx-13 vendor/xiaomi/marble
 
 
 # Kernel
